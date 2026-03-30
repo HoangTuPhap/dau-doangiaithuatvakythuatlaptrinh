@@ -1,0 +1,4 @@
+class Solution:
+    def countElements(self, nums):
+        mn, mx = min(nums), max(nums)
+        return sum(mn < x < mx for x in nums)
